@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meals Around World</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+  <!--bootstrab  -->
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- fontawesome -->
+
+  <link rel="stylesheet" href="./css/all.min.css">
+
+  <!-- main style -->
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body class="bg-black overflow-hidden">
+ 
+  <!-- ********************************** Loading Screen ********************************************** -->
+
+  <div class="loading d-none position-fixed d-flex z-3 justify-content-center align-items-center top-0 end-0 bottom-0 start-0 bg-black bg-opacity-75">
+
+    <i class="fa-solid fa-spinner fa-7x text-success fa-spin"></i>
+    <!-- <span class="loader"></span> -->
+
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+  
+  <!-- ********************************** Side Navbar *************************************************** -->
+
+  <header class=" Mynav bg-black position-fixed top-0 bottom-0 z-3 d-flex flex-column justify-content-between d-non">
+
+    <div class="mt-5 ms-4 text-white">
+      <h3 class="mb-4 fs-5 Animaat position-relative" id="Search">Search</h3>
+      <h3 class="mb-4 fs-5 Animaat position-relative" id="categories">Categories</h3>
+      <h3 class="mb-4 fs-5 Animaat position-relative" id="area">Area</h3>
+      <h3 class="mb-4 fs-5 Animaat position-relative" id="ingrediensts">Ingredients</h3>
+      <h3 class=" fs-5 Animaat position-relative" id="Contact">Contact Us</h3>
+
+    </div>
+
+    <div class="my-4 ms-2 text-white ">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-globe"></i>
+
+      <h4 class="text-white">
+        Copyright Â© 2019 All Rights
+        Reserved.
+      </h4>
+
+    </div>
+
+
+    <div
+      class="togell position-absolute bg-white d-flex flex-column justify-content-between align-items-center top-0 bottom-0">
+
+      <div class="text-center my-4">
+        <img class="w-75 my-2" src="./images/logo.png" alt="Logo">
+      </div>
+      <div>
+        <i class="  openClose fa-solid fa-align-justify fa-2x"></i>
+
+      </div>
+
+      <div class="text-center my-4">
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+  <!-- ********************************** Main Sec Of Meals ********************************************** -->
+
+  <div class="container SearchSec">.
+
+    <div class="container w-75 SearchedCon d-none">
+
+      <div class="row g-3 py-5 ">
+
+        <div class="col-md-6">
+          <input id="InputForSearchByName" type="text" class="form-control" placeholder="Search For Meal By Name">
+        </div>
+
+        <div class="col-md-6">
+          <input maxlength="1" id="InputForSearchByLitter" type="text" class="form-control" placeholder="Search For Meal By First Litter">
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <div id="MainMeals" class="row gy-4 MainSecForMeals  ">
+
+    </div>
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+
+
+  <!-- ********************************** Loading Screen ********************************************** -->
+
+  <div class="DetailsSec">
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+
+  <!-- ********************************** Contact Section ********************************************** -->
+
+  <div class="ContactSec d-none">
+    <div class="container p-5 mt-5">
+      <div class="row p-5 g-4">
+
+        <div class="col-md-6">
+
+
+          <!-- w-75 mt-5 كلاسات هضيفها للكونتينر لما اجي اظهر الكونتاكت -->
+
+          <div class="inner">
+            <input id="nameInput" placeholder="Enter Your Name" type="text" class="form-control">
+            <section id="wrongName" class="d-none text-center bg-danger-subtle  p-3 rounded bg-danger w-100 mt-3 ">
+              Special characters , numbers not allowed and 3 characters Required
+            </section>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner">
+            <input id="emailInput" placeholder="Enter Your Email" type="email" class="form-control">
+            <section id="wrongEmail" class="d-none text-center bg-danger-subtle p-3 rounded bg-danger w-100 mt-3 ">
+              Email not valid *exemple@yyy.zzz
+            </section>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner">
+            <input id="PhoneInput" placeholder="Enter Your Phone" type="text" class="form-control">
+            <section id="wrongPhone" class="d-none text-center bg-danger-subtle p-3 rounded bg-danger w-100 mt-3 ">
+              Enter valid Phone Number
+            </section>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner">
+            <input id="ageInput" placeholder="Enter Your Age" type="number" class="form-control">
+            <section id="wrongAge" class="d-none text-center bg-danger-subtle p-3 rounded w-100 mt-3 ">
+              Enter valid age
+            </section>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner">
+            <input id="passwordInput" placeholder="Enter Your Password" type="password" class="form-control">
+            <section id="wrongPassword" class="d-none text-center bg-danger-subtle  p-3 rounded bg-danger w-100 mt-3 ">
+              Enter valid password *Minimum Seven characters, at Least one ( Capital ,Small ) letter :*
+            </section>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner">
+            <input id="rePasswordInput" placeholder="Retype Your Password" type="password" class="form-control">
+            <section id="wrongrePassword" class="d-none text-center bg-danger-subtle p-3 rounded bg-danger w-100 mt-3 ">
+              repassword Are Not Match
+            </section>
+          </div>
+        </div>
+
+        <section id="SubmitBtn" class="text-center"><button type="button" class="btn btn-outline-danger disabled">Submit</button></section>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------------------------ -->
+
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,58 @@
+
+.togell{
+    left: 100%;
+    width: 48px;
+
+};
+
+.Animaat:hover{
+    color: lightcoral;
+    transition: all .3s;
+}
+
+header{
+    width: 22%;
+    left:-22%
+}
+
+i , .col-lg-3{
+    cursor: pointer;
+}
+
+header h3{
+    cursor: pointer;
+    top: 350px;
+    width: fit-content;
+    
+}
+
+
+
+.layer{
+    top: 100%;
+    background-color: rgba(255, 255, 255 , .8);
+    transition: .5s all;
+    height: 100%;
+
+}
+
+.inner:hover .layer{
+    top: 0%;
+
+
+}
+
+
+.Details .fa-x{
+    top: 10%;
+    right:-5%;
+    background-color: rgb(253, 90, 90);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
